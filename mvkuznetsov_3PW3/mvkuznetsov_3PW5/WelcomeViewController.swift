@@ -67,6 +67,7 @@ final class WelcomeViewController: UIViewController, ChangeColorProtocol {
         
         let newsButton = makeMenuButton(title: "📰")
         newsButton.layer.applyShadow()
+        newsButton.addTarget(self, action: #selector(newsButtonPressed), for: .touchUpInside)
         
         buttonsSV = UIStackView(arrangedSubviews: [colorsButton, notesButton, newsButton])
         buttonsSV.spacing = 12
@@ -76,6 +77,18 @@ final class WelcomeViewController: UIViewController, ChangeColorProtocol {
         self.view.addSubview(buttonsSV)
         buttonsSV.pin(to: self.view, [.left: 24, .right: 24, .bottom: 24])
         buttonsSV.pinBottom(to: self.view.safeAreaLayoutGuide.bottomAnchor, 24)
+    }
+    
+    @objc
+    private func newsButtonPressed() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
+        let newsListController = NewsListViewController()
+        navigationController?.pushViewController(newsListController, animated: true)
+        
+//        let navigationController = UINavigationController(rootViewController: newsListController)
+//        present(navigationController, animated: true, completion: nil)
     }
     
     @objc
@@ -91,8 +104,8 @@ final class WelcomeViewController: UIViewController, ChangeColorProtocol {
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         
-        let navigationControllet = UINavigationController(rootViewController: notesViewController)
-        present(navigationControllet, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: notesViewController)
+        present(navigationController, animated: true, completion: nil)
     }
     
     @objc

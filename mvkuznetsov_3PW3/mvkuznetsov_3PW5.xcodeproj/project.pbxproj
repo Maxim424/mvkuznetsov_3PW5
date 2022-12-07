@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4F0161AF290D65C000449F0E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0161AE290D65C000449F0E /* UIColorExtension.swift */; };
+		4F07E0B52940CA7900C85EB8 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07E0B42940CA7900C85EB8 /* NewsListViewController.swift */; };
+		4F07E0B72940D4C300C85EB8 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07E0B62940D4C300C85EB8 /* NewsCell.swift */; };
+		4F07E0B92940DE1E00C85EB8 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07E0B82940DE1E00C85EB8 /* NewsViewModel.swift */; };
 		4F1D211E2909368E0048C6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D211D2909368E0048C6CC /* AppDelegate.swift */; };
 		4F1D21202909368E0048C6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D211F2909368E0048C6CC /* SceneDelegate.swift */; };
 		4F1D21272909368F0048C6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D21262909368F0048C6CC /* Assets.xcassets */; };
@@ -25,6 +28,8 @@
 		4F8CC474290D477C00DE2F58 /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CC473290D477C00DE2F58 /* ColorPaletteView.swift */; };
 		4F8CC476290D4FCC00DE2F58 /* ColorPaletteViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CC475290D4FCC00DE2F58 /* ColorPaletteViewExtention.swift */; };
 		4F8FDB99290E9327001F6519 /* ChangeColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8FDB98290E9327001F6519 /* ChangeColorProtocol.swift */; };
+		4FAD8D882941205A00481312 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD8D872941205A00481312 /* ApiService.swift */; };
+		4FAD8D8C29412CFB00481312 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD8D8B29412CFB00481312 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		4F0161AE290D65C000449F0E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4F07E0B42940CA7900C85EB8 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		4F07E0B62940D4C300C85EB8 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		4F07E0B82940DE1E00C85EB8 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		4F1D211A2909368E0048C6CC /* mvkuznetsov_3PW5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvkuznetsov_3PW5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1D211D2909368E0048C6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F1D211F2909368E0048C6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 		4F8CC473290D477C00DE2F58 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 		4F8CC475290D4FCC00DE2F58 /* ColorPaletteViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewExtention.swift; sourceTree = "<group>"; };
 		4F8FDB98290E9327001F6519 /* ChangeColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorProtocol.swift; sourceTree = "<group>"; };
+		4FAD8D872941205A00481312 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		4FAD8D8B29412CFB00481312 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,17 @@
 			path = ColorPalette;
 			sourceTree = "<group>";
 		};
+		4F07E0B32940CA6700C85EB8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4F07E0B42940CA7900C85EB8 /* NewsListViewController.swift */,
+				4F07E0B62940D4C300C85EB8 /* NewsCell.swift */,
+				4F07E0B82940DE1E00C85EB8 /* NewsViewModel.swift */,
+				4FAD8D8B29412CFB00481312 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		4F1D21112909368E0048C6CC = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +169,7 @@
 		4F1D211C2909368E0048C6CC /* mvkuznetsov_3PW5 */ = {
 			isa = PBXGroup;
 			children = (
+				4F07E0B32940CA6700C85EB8 /* News */,
 				4F07E0B22940C97000C85EB8 /* ColorPalette */,
 				4F07E0B12940C93500C85EB8 /* Notes */,
 				4F07E0B02940C8B700C85EB8 /* Extensions */,
@@ -157,6 +179,7 @@
 				4F1D21262909368F0048C6CC /* Assets.xcassets */,
 				4F1D21282909368F0048C6CC /* LaunchScreen.storyboard */,
 				4F1D212B2909368F0048C6CC /* Info.plist */,
+				4FAD8D872941205A00481312 /* ApiService.swift */,
 			);
 			path = mvkuznetsov_3PW5;
 			sourceTree = "<group>";
@@ -310,9 +333,14 @@
 			files = (
 				4F6895AB2928FF71005E0B86 /* AddNoteCell.swift in Sources */,
 				4F1D21572909429B0048C6CC /* UIView+Pin.swift in Sources */,
+				4FAD8D882941205A00481312 /* ApiService.swift in Sources */,
 				4F1D21562909429B0048C6CC /* CALayer+Shadow.swift in Sources */,
+				4F07E0B52940CA7900C85EB8 /* NewsListViewController.swift in Sources */,
+				4F07E0B72940D4C300C85EB8 /* NewsCell.swift in Sources */,
 				4F1D21582909429B0048C6CC /* WelcomeViewController.swift in Sources */,
+				4FAD8D8C29412CFB00481312 /* NewsViewController.swift in Sources */,
 				4F6895A92928F6F5005E0B86 /* NoteCell.swift in Sources */,
+				4F07E0B92940DE1E00C85EB8 /* NewsViewModel.swift in Sources */,
 				4F0161AF290D65C000449F0E /* UIColorExtension.swift in Sources */,
 				4F1D211E2909368E0048C6CC /* AppDelegate.swift in Sources */,
 				4F8FDB99290E9327001F6519 /* ChangeColorProtocol.swift in Sources */,
